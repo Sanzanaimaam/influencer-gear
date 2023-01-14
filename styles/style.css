@@ -1,0 +1,141 @@
+*{
+    font-family: 'Open Sans', sans-serif;
+}
+nav{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 20px 200px;
+}
+.nav-title{
+    font-weight: 700;
+    font-size: 24px;
+}
+nav ul{
+    display:flex;
+    align-items: center;
+}
+nav li{
+    font-weight: 600;
+    font-size: 16px;
+    list-style: none;
+    margin-left:30px;
+}
+.banner{
+    display:flex;
+    align-items: center;
+    margin: 20px 200px;
+    gap: 250px;
+
+
+}
+.banner-title{
+    font-weight: 900;
+    font-size:40px;
+}
+.banner-description{
+    font-weight: 600;
+    font-size: 16px;
+}
+.btn{
+    padding: 10px 56px;
+    margin-top: 10px;
+    background-color: #E02C6D;
+    border-radius: 41px;
+    color: #FFFFFF;
+    border: none;
+    font-size: 16px;
+}
+
+
+.online-shop{
+    display:grid;
+    grid-template-columns: repeat(7, 1fr);
+
+    margin:150px 200px;
+    
+}
+/* grids */
+.second-section{
+    background-color: #FFFFFF;
+    border-radius: 5px;
+}
+.grid-title{
+    display: flex;
+    justify-content: center;
+}
+.grids{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap:30px;
+    grid-row-gap: 30px;
+    padding:0 200px;
+
+}
+.fa-star.filled{
+    color: #FFC014;
+}
+.grids .grid{
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+    width: 329px;
+    height: 476px;
+    background: #FFFFFF;
+    text-align: left;
+    padding: 10px;
+}
+
+@media only screen and (max-width:688px) {
+    nav{
+        padding:0 0;
+    }
+    .nav-title{
+        flex-direction: row;
+        align-items: stretch;
+    }
+    .banner{
+        flex-direction: column-reverse;
+        gap:10px;
+        margin: 0 auto;
+        justify-content: center;
+       
+    }
+    .banner img{
+        width: 75%;
+    }
+    .banner-title, .banner-description{
+        text-align: center;
+    }
+    .btn{
+        margin-left:100px;
+    }
+    /* .banner-class{
+        margin: 0 auto;
+    } */
+    nav ul{
+        flex-direction: column;
+        display: block;
+        padding: 0;
+    }
+    .online-shop{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: center;
+    }
+    .online-shop img{
+        width:100px;
+    }
+    .online-shop{
+        grid-template-columns: repeat(4, 1fr);
+        align-items: center;
+        grid-column-gap:20px;
+        
+    }
+    .grids{
+        grid-template-columns: repeat(1, 1fr);
+        grid-row-gap:20px;
+        padding:0 0;
+    
+    }
+    
+}
