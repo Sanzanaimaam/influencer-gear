@@ -29,6 +29,14 @@ nav li{
 
 
 }
+.cam-image{
+    background: radial-gradient(#F1E4FF 50%, #FFFFFF 50%);
+    border: 4px solid #F1E4FF;
+    border-radius: 90%;
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+}
 .banner-title{
     font-weight: 900;
     font-size:40px;
@@ -46,19 +54,33 @@ nav li{
     border: none;
     font-size: 16px;
 }
-
+.first-section{
+    background-color: white;
+    background-position: center center;
+    margin:0 200px;
+    height: 100px;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+}
 
 .online-shop{
     display:grid;
     grid-template-columns: repeat(7, 1fr);
-
+    justify-content: center;
+    grid-column-gap:30px;
+    align-items: center;
     margin:150px 200px;
+     
     
 }
 /* grids */
 .second-section{
-    background-color: #FFFFFF;
-    border-radius: 5px;
+    /* margin-top: 130px;
+    background: #FFF8F3;
+    border-radius: 10px;
+    padding:0 0; */
+    background: whitesmoke;
+    background-position: center center;
+    margin: 200px;
 }
 .grid-title{
     display: flex;
@@ -69,8 +91,6 @@ nav li{
     grid-template-columns: repeat(3, 1fr);
     grid-column-gap:30px;
     grid-row-gap: 30px;
-    padding:0 200px;
-
 }
 .fa-star.filled{
     color: #FFC014;
@@ -83,6 +103,32 @@ nav li{
     background: #FFFFFF;
     text-align: left;
     padding: 10px;
+}
+
+/* features */
+.third-section{
+    background-color: whitesmoke;
+    background-position: center center;
+    margin:100px 200px;
+
+}
+
+.feature-section{
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    text-align: left;
+    align-items: center;
+}
+
+/* footer */
+.footer{
+    background-color: rgb(2, 2, 32);
+    padding: 100px 100px;
+}
+.footer-div{
+    color: #F1E4FF;
+    text-align: center;
 }
 
 @media only screen and (max-width:688px) {
@@ -107,7 +153,7 @@ nav li{
         text-align: center;
     }
     .btn{
-        margin-left:100px;
+        margin: 0;
     }
     /* .banner-class{
         margin: 0 auto;
@@ -116,6 +162,9 @@ nav li{
         flex-direction: column;
         display: block;
         padding: 0;
+    }
+    .first-section{
+        margin: 0 0;;
     }
     .online-shop{
         display: grid;
@@ -127,15 +176,24 @@ nav li{
     }
     .online-shop{
         grid-template-columns: repeat(4, 1fr);
+        justify-content: center;
         align-items: center;
         grid-column-gap:20px;
+        padding: 0 0;
         
     }
     .grids{
         grid-template-columns: repeat(1, 1fr);
+        justify-content: center;
+        margin-left:60px;
         grid-row-gap:20px;
         padding:0 0;
+        margin: 0 0;
     
     }
+    .feature-section{
+        flex-direction: column-reverse;
+    }
+   
     
 }
